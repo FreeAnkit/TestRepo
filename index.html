@@ -1,1 +1,192 @@
-<h1>Hello Test Repop</h1>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Food Delivery Service in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellota|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body onload="myloader()">
+    <div class="loading">
+    <nav id="navbar">
+        <div id="logo" style="color: white; text-align: center; font-size: 1.5rem; font-family:monospace; font-weight: bolder; font-style: italic;">
+            <!-- <img src="../LOGO.png" alt="MyOnlineMeal.com"> -->
+            My
+            <br>Online
+            <br>Meal
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>   
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center" style="color: white;">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="images/1.png" alt="">
+                <h2 class="h-secondary center" >Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="images/2.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+            <div class="box">
+                <img src="images/3.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="images/logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="images/logo2.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item ">
+                <img src="images/logo3.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="images/logo4.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" >
+        <h1 class="h-primary center" style="color: black;">Contact Us</h1>
+        <div id="contact-box">
+            <form action="" method="POST">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="in_name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="in_email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="number" name="in_number" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Query: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your Query Here" name= "enquiry"></textarea>
+                </div>
+                <div>
+                    <button id="contact-btn" name="submit">Submit </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+    
+</div>
+<button onclick="topFunction()" id="myBtnTop" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+</button>
+    <script>
+        var prelaoder = document.getElementById('loading');
+
+        function myloader() {
+            prelaoder.style.display = 'none';            
+        }
+// Code for top button :-
+    mybutton = document.getElementById("myBtnTop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+            mybutton.style.display = "none";
+    }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+</body>
+
+</html>
+
+<?php
+
+include 'MOM_connection.php';
+
+if(isset($_POST['submit'])){
+
+    $name = $_POST['in_name'];
+    $e_mail = $_POST['in_email'];
+    $number = $_POST['in_number'];
+    $out_enquiry = $_POST['enquiry'];
+
+    $insertquery = "INSERT INTO myonlinemeal(name,email,number,enquiry) VALUES ('$name','$e_mail','$number','$out_enquiry')";
+
+    $res = mysqli_query($conn,$insertquery);
+
+    if($res){
+        ?>
+        <script>
+            alert("Your query is submitted !!! We get back to U SOON !!!")
+        </script>
+        <?php
+    }else{
+        ?>
+        <script>
+            alert("Your query is not submitted !!! Try Again After Some Time!!! Thank You ")
+        </script>
+        <?php
+    }
+}
+?>
+
+<?php
+
+// include 'MOM_info.php';
+
+?>
